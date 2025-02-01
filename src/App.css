@@ -1,0 +1,98 @@
+/* Estilo básico para a aplicação */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;     /* Centraliza verticalmente */
+  font-family: Arial, sans-serif;
+}
+
+.calculadora{
+  gap:100px
+ }
+
+ .calculadora h1{
+  max-width: 450px;
+  margin: 0 auto
+ }
+
+.container {
+ padding: 30px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Estilo para inputs */
+input[type="number"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="number"].no-spin::-webkit-outer-spin-button,
+input[type="number"].no-spin::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"].no-spin {
+  -moz-appearance: textfield;
+}
+
+/* Estilo para o botão */
+button {
+  padding: 10px;
+  background-color: #8200ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #8400ffce;
+}
+
+/* Estilo para o resultado */
+.result {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 10px;
+  background-color: #8200ff;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.copy-message {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  transition: opacity 0.5s ease-out;
+}
